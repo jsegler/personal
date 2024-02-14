@@ -1,5 +1,10 @@
-const App = () => {
-  return <p className="text-2xl">hi</p>;
-};
+import { Providers } from "./Providers";
+import { Home } from "./pages";
 
-export default App;
+export const App = () => {
+  return (
+    <Providers>
+      <Home />
+    </Providers>
+  );
+};
