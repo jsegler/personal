@@ -55,7 +55,10 @@ const Word = ({ children, position, i, j, onClick }: WordProps) => {
         ref={ref}
         onPointerOver={over}
         onPointerOut={out}
-        onClick={() => onClick(position)}
+        onClick={(e) => {
+          e.stopPropagation();
+          onClick(position);
+        }}
         {...fontProps}
       >
         {children}
@@ -131,7 +134,7 @@ const RotatingGroup = () => {
 
     if (clickedPosition) {
       const wordDirection = clickedPosition.clone().normalize();
-      const cameraPosition = new THREE.Vector3(0, 0, 20);
+      const cameraPosition = new THREE.Vector3(0, 0, 38);
       const cameraVector = cameraPosition.clone().normalize();
 
       const q = new THREE.Quaternion().setFromUnitVectors(
