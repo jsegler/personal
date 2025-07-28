@@ -25,7 +25,7 @@ export const Header: FC = () => {
         <div
           key={item}
           className={clsx(
-            "text-white uppercase duration-200 cursor-pointer transition-all hover:text-shadow-white",
+            "text-white uppercase duration-500 cursor-pointer transition-all hover:text-shadow-white",
             activeItem === item && scrollY > window.innerHeight * 0.9
               ? "text-shadow-white text-xl"
               : "text-shadow-none"

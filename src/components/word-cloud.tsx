@@ -131,7 +131,7 @@ const RotatingGroup = () => {
 
     if (clickedPosition) {
       const wordDirection = clickedPosition.clone().normalize();
-      const cameraPosition = new THREE.Vector3(0, 0, 38);
+      const cameraPosition = new THREE.Vector3(0, 0, 20);
       const cameraVector = cameraPosition.clone().normalize();
 
       const q = new THREE.Quaternion().setFromUnitVectors(
