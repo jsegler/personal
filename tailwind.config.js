@@ -23,11 +23,16 @@ module.exports = {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
         },
+        "pulse-shadow": {
+          "0%, 100%": { "box-shadow": "0 0 12px #c58230" },
+          "50%": { "box-shadow": "0 0 15px #c55930" },
+        },
       },
       animation: {
         "pulse-twice": "pulse-twice 10s ease-in-out infinite",
         "fade-out": "fade-out 0.5s ease-in-out forwards",
         "fade-in": "fade-in 1.0s ease-in-out forwards",
+        "pulse-shadow": "pulse-shadow 2s ease-in-out infinite",
       },
       textShadow: {
         white: "0 0 12px rgba(255,255,255,1)",

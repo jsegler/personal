@@ -1,7 +1,9 @@
+import clsx from "clsx";
 import { FC, PropsWithChildren, useEffect, useRef } from "react";
 
 interface PageProps {
   onVisible?: () => void;
+  pages?: number;
 }
 
 export const Page: FC<PropsWithChildren & PageProps> = (props) => {
@@ -29,8 +31,12 @@ export const Page: FC<PropsWithChildren & PageProps> = (props) => {
 
   return (
     <div
-      className="w-screen h-screen"
-      style={{ background: "rgb(26, 24, 25)" }}
+      className={clsx("w-screen")}
+      style={{
+        background: "rgb(26, 24, 25)",
+        height: props.pages ? props.pages * 100 + "vh" : "100vh",
+        boxShadow: "0 -100px 100px rgba(26, 24, 25, 0.8)",
+      }}
     >
       {props.children}
     </div>

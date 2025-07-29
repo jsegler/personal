@@ -177,7 +177,9 @@ export const WordCloud = () => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
-        setActiveItem("Skills");
+        if (entry.isIntersecting) {
+          setActiveItem("Skills");
+        }
       },
       {
         threshold: 0.2,

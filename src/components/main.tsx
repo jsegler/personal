@@ -1,8 +1,9 @@
 import { HeaderProvider } from "../hooks/useHeader";
+import { Experience } from "./experience";
 import { Header } from "./header";
 import { Hero } from "./hero";
 import { Page } from "./page";
-import { WordCloud } from "./word-cloud";
+import { WordCloud } from "./skills";
 
 export const MainScrollable = () => {
   return (
@@ -12,6 +13,9 @@ export const MainScrollable = () => {
         <Hero />
         <Page>
           <WordCloud />
+        </Page>
+        <Page>
+          <Experience />
         </Page>
       </div>
     </HeaderProvider>
