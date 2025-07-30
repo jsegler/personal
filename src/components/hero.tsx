@@ -21,7 +21,7 @@ export const Hero = () => {
     >
       <div
         className={clsx(
-          "fixed text-white md:max-w-3xl sm:max-w-md max-w-xs text-center mb-60 transition-all ease-out"
+          "fixed text-white lg:max-w-3xl sm:max-w-md max-w-xs text-center mb-60 transition-all ease-out"
         )}
         style={{
           opacity: !show ? 0 : 1 - scrollY / 40 / 0.2,

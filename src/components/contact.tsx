@@ -80,7 +80,7 @@ export const Contact = () => {
   return (
     <div
       ref={ref}
-      className="md:w-6/12 w-10/12 mx-auto tracking-wider flex justify-center md:pt-8 pb-40 relative"
+      className="lg:w-6/12 sm:w-8/12 w-10/12 mx-auto tracking-wider flex justify-center md:pt-8 pb-40 relative"
     >
       <AnimatePresence mode="wait">
         {isVisible && (
@@ -137,7 +137,7 @@ export const Contact = () => {
                 rows={10}
                 value={formData.message}
                 onChange={handleChange}
-                className="px-4 py-2 rounded bg-white text-slate-700 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-700"
+                className="w-full px-4 py-2 rounded bg-white text-slate-700 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-700"
                 placeholder="Your message..."
               />
             </div>

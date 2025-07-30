@@ -129,7 +129,7 @@ const ExperienceItem = ({
 
 export const Experience = () => {
   return (
-    <div className="min-h-screen py-24 flex md:w-6/12 w-10/12 mx-auto tracking-wider">
+    <div className="min-h-screen py-24 flex lg:w-6/12 sm:w-8/12 w-10/12 mx-auto tracking-wider">
       <ol className="group/list w-full">
         {experiences.map((experience, eIndex) =>
           experience.items.map((item, iIndex) => (
