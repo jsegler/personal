@@ -80,3 +80,81 @@ export const wordCloudSkillsGrid = [
     { name: "Firebase", radius: 7 },
   ],
 ];
+
+export const experiences = [
+  {
+    company: "IBM Consulting",
+    period: "July 2022 — Present",
+    image: "/images/ibm-logo.png",
+    items: [
+      {
+        title: "Engineering Lead",
+        subcompany: "Boston Consulting Group",
+        description:
+          "Led technical direction for the Gen AI Growth Diagnostic project, transforming manual strategy development into an AI-powered interactive platform. Designed scalable Next.js and MongoDB architecture, implemented authentication with Okta, and integrated generative AI using OpenAI and LangChain.",
+        technologies: [
+          "Next.js",
+          "MongoDB Atlas",
+          "Okta",
+          "OpenAI",
+          "LangChain",
+          "Vercel",
+        ],
+      },
+      {
+        title: "Engineering Lead",
+        subcompany: "Pizza Hut",
+        description:
+          "Architected and delivered the Pizza Hut Medic Assistant, a React Native app using generative AI to triage technical issues. Integrated with ServiceNow, Azure OpenAI, and deployed infrastructure on Azure while serving as the primary engineering contact for stakeholders.",
+        technologies: ["React Native", "Azure", "ServiceNow", "Azure OpenAI"],
+      },
+      {
+        title: "Senior Full Stack Engineer",
+        subcompany: "Link Logistics",
+        description:
+          "Led frontend technical design and contributed full-stack to Property IQ, a Mapbox-based application used internally to manage property data. Implemented advanced geospatial features, optimized performance, and collaborated closely with stakeholders and junior devs.",
+        technologies: [
+          "React",
+          "Node.js",
+          "Mapbox",
+          "OpenStreetMap",
+          "GeoJSON",
+        ],
+      },
+    ],
+  },
+  {
+    company: "Kara & Nate",
+    period: "Feb 2021 — Jul 2022",
+    image: "/images/kara-and-nate-logo.png",
+    items: [
+      {
+        title: "Senior Full Stack Engineer / Product Manager",
+        subcompany: "atlas.co / Faredrop",
+        description:
+          "Redesigned atlas.co’s frontend in Vue and TypeScript, integrated with Shopify GraphQL API, and scaled seasonal sales. Led mobile app development at Faredrop, boosting revenue and subscribers with intelligent deal scoring algorithms and React/Ionic UX revamp.",
+        technologies: [
+          "Vue.js",
+          "React",
+          "TypeScript",
+          "Shopify",
+          "GraphQL",
+          "Ionic",
+        ],
+      },
+    ],
+  },
+  {
+    period: "Aug 2019 — Feb 2021",
+    company: "Vrbo",
+    image: "/images/vrbo-logo.png",
+    items: [
+      {
+        title: "Android Engineer",
+        description:
+          "Built core features for the Android Traveler app, including a map-paint search tool that generated $1M+ in revenue. Led Kotlin migration and created social features for group travel planning and polling.",
+        technologies: ["Kotlin", "Java", "Android", "Map UX"],
+      },
+    ],
+  },
+];

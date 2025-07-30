@@ -14,7 +14,7 @@ export const MainScrollable = () => {
         <Page>
           <WordCloud />
         </Page>
-        <Page>
+        <Page pages={2}>
           <Experience />
         </Page>
       </div>
