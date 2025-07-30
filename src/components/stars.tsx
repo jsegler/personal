@@ -1,10 +1,18 @@
 import { useScrollPosition } from "../hooks/useScrollPosition";
-import { FC, useMemo } from "react";
+import { FC, useEffect, useMemo, useRef } from "react";
+
+type Star = {
+  i: number;
+  x: number;
+  y: number;
+  r: number;
+  opacity: number;
+};
 
 export const Stars: FC = () => {
   const scrollY = useScrollPosition();
-
-  const stars = useMemo(() => {
+  const svgRef = useRef<SVGSVGElement | null>(null);
+  const stars = useMemo<Star[]>(() => {
     return Array.from({ length: 150 }).map((_, i) => {
       const x = Math.random() * window.innerWidth;
       const y = Math.random() * window.innerHeight;
@@ -28,6 +36,35 @@ export const Stars: FC = () => {
     });
   }, []);
 
+  const offsetRef = useRef(0);
+
+  useEffect(() => {
+    const svg = svgRef.current;
+    if (!svg) return;
+
+    const circles = Array.from(svg.querySelectorAll("circle"));
+    const speed = 0.02; // adjust for slower/faster drift
+
+    const animate = () => {
+      offsetRef.current += speed;
+      if (offsetRef.current > window.innerWidth) {
+        offsetRef.current = 0;
+      }
+
+      circles.forEach((circle, i) => {
+        const star = stars[i];
+        const driftedX = (star.x + offsetRef.current) % window.innerWidth;
+        circle.setAttribute("cx", driftedX.toString());
+      });
+
+      requestAnimationFrame(animate);
+    };
+
+    requestAnimationFrame(animate);
+
+    // No cleanup needed since stars are static and component is fixed
+  }, [stars]);
+
   return (
     <div
       className="w-screen h-screen fixed"
@@ -40,6 +77,7 @@ export const Stars: FC = () => {
       }}
     >
       <svg
+        ref={svgRef}
         width="100vw"
         height="100vh"
         style={{ width: "100vw", height: "100vh", display: "block" }}
