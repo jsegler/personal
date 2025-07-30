@@ -90,10 +90,12 @@ export const experiences = [
       {
         title: "Engineering Lead",
         subcompany: "Boston Consulting Group",
+        url: "https://www.bcg.com/",
         description:
           "Led technical direction for the Gen AI Growth Diagnostic project, transforming manual strategy development into an AI-powered interactive platform. Designed scalable Next.js and MongoDB architecture, implemented authentication with Okta, and integrated generative AI using OpenAI and LangChain.",
         technologies: [
           "Next.js",
+          "Typescript",
           "MongoDB Atlas",
           "Okta",
           "OpenAI",
@@ -104,17 +106,26 @@ export const experiences = [
       {
         title: "Engineering Lead",
         subcompany: "Pizza Hut",
+        url: "https://www.yum.com/wps/portal/yumbrands/Yumbrands/company/our-brands/pizza-hut",
         description:
           "Architected and delivered the Pizza Hut Medic Assistant, a React Native app using generative AI to triage technical issues. Integrated with ServiceNow, Azure OpenAI, and deployed infrastructure on Azure while serving as the primary engineering contact for stakeholders.",
-        technologies: ["React Native", "Azure", "ServiceNow", "Azure OpenAI"],
+        technologies: [
+          "React Native",
+          "Typescript",
+          "Azure",
+          "ServiceNow",
+          "Azure OpenAI",
+        ],
       },
       {
         title: "Senior Full Stack Engineer",
         subcompany: "Link Logistics",
+        url: "https://www.linklogistics.com/",
         description:
           "Led frontend technical design and contributed full-stack to Property IQ, a Mapbox-based application used internally to manage property data. Implemented advanced geospatial features, optimized performance, and collaborated closely with stakeholders and junior devs.",
         technologies: [
           "React",
+          "Typescript",
           "Node.js",
           "Mapbox",
           "OpenStreetMap",
@@ -130,17 +141,26 @@ export const experiences = [
     items: [
       {
         title: "Senior Full Stack Engineer / Product Manager",
-        subcompany: "atlas.co / Faredrop",
+        subcompany: "Faredrop",
         description:
-          "Redesigned atlas.co’s frontend in Vue and TypeScript, integrated with Shopify GraphQL API, and scaled seasonal sales. Led mobile app development at Faredrop, boosting revenue and subscribers with intelligent deal scoring algorithms and React/Ionic UX revamp.",
+          "Spearheaded the launch of a mobile app and revamped the web UX using React, Ionic, and TypeScript. This resulted in a 385% increase in MRR and an 874% surge in new subscribers. Developed the Deal Scoring algorithm to intelligently prioritize Google Flights deals, streamlining operations and improving personalization.",
         technologies: [
-          "Vue.js",
           "React",
-          "TypeScript",
-          "Shopify",
-          "GraphQL",
           "Ionic",
+          "TypeScript",
+          "Node.js",
+          "AWS",
+          "GraphQL",
+          "SendGrid",
+          "Stripe",
         ],
+      },
+      {
+        title: "Senior Full Stack Engineer / Product Manager",
+        subcompany: "atlas.co",
+        description:
+          "Led a full site-wide frontend redesign using Vue.js and TypeScript, improving usability and reducing customer support tickets by 68% year-over-year during peak season. Engineered backend infrastructure for expanded map product options, integrating with the Shopify GraphQL Bulk API and enabling over $50K in seasonal sales.",
+        technologies: ["Vue.js", "TypeScript", "Node.js", "Shopify", "AWS"],
       },
     ],
   },

@@ -2,8 +2,9 @@ import { useScrollPosition } from "../hooks/useScrollPosition";
 import { useHeader } from "../hooks/useHeader";
 import clsx from "clsx";
 import { FC, useEffect, useState } from "react";
+import { HeaderItem } from "../types";
 
-const headerItems = ["Skills", "Experience", "Contact"];
+const headerItems: HeaderItem[] = ["Skills", "Experience", "Contact"];
 
 export const Header: FC = () => {
   const [show, setShow] = useState(false);
@@ -17,7 +18,7 @@ export const Header: FC = () => {
   return (
     <div
       className={clsx(
-        "flex w-full justify-center px-8 py-4 z-10 fixed top-0 left-0 gap-8 items-center duration-1000 transition-all ease-in-out",
+        "flex justify-center px-8 py-4 z-[100] fixed top-2 gap-8 items-center duration-1000 transition-all ease-in-out bg-dark-500/20 w-fit left-1/2 translate-x-[-50%] rounded-lg backdrop-blur-[2px]",
         show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
       )}
     >

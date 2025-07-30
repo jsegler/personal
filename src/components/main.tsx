@@ -11,10 +11,10 @@ export const MainScrollable = () => {
       <div className="w-screen absolute">
         <Header />
         <Hero />
-        <Page>
+        <Page headerId="Skills">
           <WordCloud />
         </Page>
-        <Page pages={2}>
+        <Page headerId="Experience" pages={1.75}>
           <Experience />
         </Page>
       </div>

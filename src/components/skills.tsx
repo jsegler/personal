@@ -1,10 +1,9 @@
-import * as THREE from "three";
-import { useRef, useState, useMemo, Suspense, useEffect } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
 import { Billboard, Text, TrackballControls } from "@react-three/drei";
+import { Canvas, useFrame } from "@react-three/fiber";
+import { Suspense, useEffect, useMemo, useRef, useState } from "react";
+import * as THREE from "three";
 import { Vector3 } from "three";
 import { wordCloudSkillsGrid } from "../utils/constants";
-import { useHeader } from "../hooks/useHeader";
 
 interface WordProps {
   children: string;
@@ -166,7 +165,6 @@ const RotatingGroup = () => {
 };
 
 export const WordCloud = () => {
-  const { setActiveItem } = useHeader();
   const ref = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -177,12 +175,9 @@ export const WordCloud = () => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
-        if (entry.isIntersecting) {
-          setActiveItem("Skills");
-        }
       },
       {
-        threshold: 0.2,
+        threshold: 0.1,
       }
     );
 

@@ -40,6 +40,11 @@ module.exports = {
       boxShadow: {
         white: "0 0 12px #fff",
       },
+      colors: {
+        dark: {
+          500: "rgb(26, 24, 25)",
+        },
+      },
     },
   },
   plugins: [require("tailwindcss-textshadow")],

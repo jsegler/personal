@@ -1,9 +1,9 @@
-// A Context/Provider for managing header state
+import { HeaderItem } from "../types";
 import { createContext, useContext, useState } from "react";
 
 interface HeaderContextType {
   activeItem: string | null;
-  setActiveItem: (item: string | null) => void;
+  setActiveItem: (item: HeaderItem | null) => void;
 }
 
 const HeaderContext = createContext<HeaderContextType | undefined>(undefined);
