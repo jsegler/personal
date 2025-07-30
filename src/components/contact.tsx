@@ -160,11 +160,11 @@ export const Contact = () => {
                 status !== "idle" ? "justify-between" : "justify-end"
               )}
             >
-              {/* {status === "success" && ( */}
-              <p className="text-green-400 text-sm">
-                Message sent successfully.
-              </p>
-              {/*  )} */}
+              {status === "success" && (
+                <p className="text-green-400 text-sm">
+                  Message sent successfully.
+                </p>
+              )}
               {status === "error" && (
                 <p className="text-red-400 text-sm">
                   Something went wrong. Try again.
