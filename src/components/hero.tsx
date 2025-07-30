@@ -21,7 +21,7 @@ export const Hero = () => {
     >
       <div
         className={clsx(
-          "fixed text-white font-libre max-w-4xl text-center mb-60 transition-all ease-out"
+          "fixed text-white max-w-3xl text-center mb-60 transition-all ease-out"
         )}
         style={{
           opacity: !show ? 0 : 1 - scrollY / 40 / 0.2,
@@ -32,6 +32,7 @@ export const Hero = () => {
         }}
       >
         <h1
+          className="font-libre"
           style={{
             fontSize: "5em",
           }}
@@ -39,8 +40,8 @@ export const Hero = () => {
           I'm Justin.
         </h1>
         <h2 className="text-2xl leading-loose">
-          Full-stack engineer and product leader specializing in React, AI, and
-          UX. I build scalable, intuitive apps to solve complex problems.
+          Full-stack engineer turning bold ideas into beautiful, scalable
+          products — from startup MVPs to enterprise AI platforms.
         </h2>
       </div>
       <div
