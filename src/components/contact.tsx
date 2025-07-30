@@ -80,7 +80,7 @@ export const Contact = () => {
   return (
     <div
       ref={ref}
-      className="w-6/12 mx-auto tracking-wider flex justify-center pt-8 pb-40 relative"
+      className="md:w-6/12 w-10/12 mx-auto tracking-wider flex justify-center md:pt-8 pb-40 relative"
     >
       <AnimatePresence mode="wait">
         {isVisible && (
@@ -93,7 +93,7 @@ export const Contact = () => {
             exit={{ opacity: 0, y: 48 }}
             transition={{ duration: 2.0, ease: "easeOut" }}
           >
-            <div className="flex gap-8">
+            <div className="flex md:flex-row flex-col md:gap-8 gap-6">
               <div className="flex flex-1 flex-col gap-4">
                 <label className="text-sm text-slate-400" htmlFor="name">
                   Name
@@ -156,15 +156,15 @@ export const Contact = () => {
 
             <div
               className={clsx(
-                "flex w-full gap-2 mt-4",
+                "flex md:flex-row flex-col w-full gap-2 mt-4",
                 status !== "idle" ? "justify-between" : "justify-end"
               )}
             >
-              {status === "success" && (
-                <p className="text-green-400 text-sm">
-                  Message sent successfully.
-                </p>
-              )}
+              {/* {status === "success" && ( */}
+              <p className="text-green-400 text-sm">
+                Message sent successfully.
+              </p>
+              {/*  )} */}
               {status === "error" && (
                 <p className="text-red-400 text-sm">
                   Something went wrong. Try again.
@@ -172,7 +172,7 @@ export const Contact = () => {
               )}
               <button
                 type="submit"
-                className="px-6 py-2 rounded-lg border border-white text-white font-semibold hover:border-amber-700 hover:text-amber-700 transition"
+                className="px-6 py-2 rounded-lg md:w-auto w-full border border-white text-white font-semibold hover:border-amber-700 hover:text-amber-700 transition"
               >
                 Send Message
               </button>

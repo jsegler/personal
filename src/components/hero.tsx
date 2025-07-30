@@ -32,7 +32,7 @@ export const Hero = () => {
         }}
       >
         <h1 className="font-libre md:text-[5em] text-[3em]">I'm Justin.</h1>
-        <h2 className="md:text-2xl text-lg leading-loose">
+        <h2 className="md:text-2xl text-lg mt-4" style={{ lineHeight: 2 }}>
           Full-stack engineer turning bold ideas into beautiful, scalable
           products — from startup MVPs to enterprise AI platforms.
         </h2>

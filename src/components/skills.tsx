@@ -197,7 +197,7 @@ export const WordCloud = () => {
       <Canvas
         dpr={[1, 2]}
         camera={{ position: [0, 0, 38], fov: 90 }}
-        className="cursor-pointer animate-fade-in py-10"
+        className="cursor-pointer animate-fade-in md:py-10"
       >
         <fog attach="fog" args={["#202025", 0, 40]} />
         <Suspense fallback={null}>
