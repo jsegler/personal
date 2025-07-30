@@ -10,14 +10,16 @@ const ExperienceItem = ({
   description,
   technologies,
   image,
+  url,
 }: {
   period?: string;
   title: string;
   company: string;
   subcompany?: string;
   description: string;
-  technologies: string[];
+  technologies?: string[];
   image?: string;
+  url: string;
 }) => {
   const ref = useRef<HTMLLIElement>(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -59,6 +61,12 @@ const ExperienceItem = ({
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 0 }}
             transition={{ duration: 0.5 }}
+            onClick={() => {
+              // Open up url in new tab
+              if (url) {
+                window.open(url, "_blank", "noopener,noreferrer");
+              }
+            }}
           >
             <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-lg transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg" />
 
@@ -93,18 +101,20 @@ const ExperienceItem = ({
               <p className="my-2 text-sm leading-normal text-slate-500/70">
                 {description}
               </p>
-              <ul
-                className="mt-2 flex flex-wrap"
-                aria-label="Technologies used"
-              >
-                {technologies.map((tech, i) => (
-                  <li key={i} className="mr-1.5 mt-2">
-                    <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-slate-400">
-                      {tech}
-                    </div>
-                  </li>
-                ))}
-              </ul>
+              {technologies && (
+                <ul
+                  className="mt-2 flex flex-wrap"
+                  aria-label="Technologies used"
+                >
+                  {technologies.map((tech, i) => (
+                    <li key={i} className="mr-1.5 mt-2">
+                      <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-slate-400">
+                        {tech}
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </motion.div>
           </motion.div>
         )}

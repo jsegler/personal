@@ -115,6 +115,7 @@ export const experiences = [
           "Azure",
           "ServiceNow",
           "Azure OpenAI",
+          "LlamaIndex",
         ],
       },
       {
@@ -127,9 +128,9 @@ export const experiences = [
           "React",
           "Typescript",
           "Node.js",
+          "Azure",
           "Mapbox",
           "OpenStreetMap",
-          "GeoJSON",
         ],
       },
     ],
@@ -142,6 +143,7 @@ export const experiences = [
       {
         title: "Senior Full Stack Engineer / Product Manager",
         subcompany: "Faredrop",
+        url: "https://faredrop.com/",
         description:
           "Spearheaded the launch of a mobile app and revamped the web UX using React, Ionic, and TypeScript. This resulted in a 385% increase in MRR and an 874% surge in new subscribers. Developed the Deal Scoring algorithm to intelligently prioritize Google Flights deals, streamlining operations and improving personalization.",
         technologies: [
@@ -158,6 +160,7 @@ export const experiences = [
       {
         title: "Senior Full Stack Engineer / Product Manager",
         subcompany: "atlas.co",
+        url: "https://www.youtube.com/watch?v=Vi7PRkAfzq4",
         description:
           "Led a full site-wide frontend redesign using Vue.js and TypeScript, improving usability and reducing customer support tickets by 68% year-over-year during peak season. Engineered backend infrastructure for expanded map product options, integrating with the Shopify GraphQL Bulk API and enabling over $50K in seasonal sales.",
         technologies: ["Vue.js", "TypeScript", "Node.js", "Shopify", "AWS"],
@@ -171,9 +174,22 @@ export const experiences = [
     items: [
       {
         title: "Android Engineer",
+        url: "https://www.vrbo.com/",
         description:
           "Built core features for the Android Traveler app, including a map-paint search tool that generated $1M+ in revenue. Led Kotlin migration and created social features for group travel planning and polling.",
-        technologies: ["Kotlin", "Java", "Android", "Map UX"],
+        technologies: ["Kotlin", "Java", "OpenGL", "GraphQL"],
+      },
+    ],
+  },
+  {
+    period: "Aug 2014 — May 2019",
+    company: "The University of Texas at Austin",
+    image: "/images/texas-logo.svg",
+    items: [
+      {
+        title: "Graduate / Undergraduate Student",
+        url: "https://www.utexas.edu/",
+        description: "M.S. of Information Studies / B.S. of Computer Science",
       },
     ],
   },
