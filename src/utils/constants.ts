@@ -1,8 +1,8 @@
 export const wordCloudSkillsGrid = [
   [
-    { name: "System Architecture", radius: 10 },
+    { name: "Stripe", radius: 8 },
     { name: "LangChain", radius: 12 },
-    { name: "Tailwind CSS", radius: 7 },
+    { name: "Tailwind", radius: 7 },
     { name: "Zustand", radius: 7 },
     { name: "MongoDB", radius: 13 },
     { name: "RAG", radius: 6 },
@@ -11,7 +11,7 @@ export const wordCloudSkillsGrid = [
   ],
   [
     { name: "Full Stack", radius: 15 },
-    { name: "Authentication", radius: 10 },
+    { name: "SendGrid", radius: 10 },
     { name: "React", radius: 20 },
     { name: "SSO", radius: 9 },
     { name: "Agile", radius: 13 },
@@ -32,11 +32,11 @@ export const wordCloudSkillsGrid = [
   [
     { name: "Docker", radius: 7 },
     { name: "Node.js", radius: 18 },
-    { name: "Data Visualization", radius: 7 },
+    { name: "Vercel", radius: 7 },
     { name: "Ionic", radius: 11 },
     { name: "Mapbox GL JS", radius: 12 },
     { name: "Apollo", radius: 7 },
-    { name: "Azure App Services", radius: 8 },
+    { name: "Azure Services", radius: 8 },
     { name: "Product Management", radius: 7 },
   ],
   [

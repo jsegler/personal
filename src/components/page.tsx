@@ -1,11 +1,12 @@
 import { HeaderItem } from "../types";
 import { useHeader } from "../hooks/useHeader";
 import clsx from "clsx";
-import { FC, PropsWithChildren, useEffect, useRef } from "react";
+import { CSSProperties, FC, PropsWithChildren, useEffect, useRef } from "react";
 
 interface PageProps {
   headerId: HeaderItem;
   pages?: number;
+  style?: CSSProperties;
 }
 
 export const Page: FC<PropsWithChildren & PageProps> = (props) => {
@@ -38,8 +39,8 @@ export const Page: FC<PropsWithChildren & PageProps> = (props) => {
       ref={ref}
       className={clsx("w-screen bg-dark-500")}
       style={{
-        height: props.pages ? props.pages * 100 + "vh" : "100vh",
         boxShadow: "0 -100px 100px rgba(26, 24, 25, 0.8)",
+        ...props.style,
       }}
     >
       {props.children}
