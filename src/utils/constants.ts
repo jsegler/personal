@@ -85,7 +85,7 @@ export const experiences = [
   {
     company: "IBM Consulting",
     period: "July 2022 — Present",
-    image: "/images/ibm-logo.png",
+    image: "images/ibm-logo.png",
     items: [
       {
         title: "Engineering Lead",
@@ -138,7 +138,7 @@ export const experiences = [
   {
     company: "Kara & Nate",
     period: "Feb 2021 — Jul 2022",
-    image: "/images/kara-and-nate-logo.png",
+    image: "images/kara-and-nate-logo.png",
     items: [
       {
         title: "Senior Full Stack Engineer / Product Manager",
@@ -170,7 +170,7 @@ export const experiences = [
   {
     period: "Aug 2019 — Feb 2021",
     company: "Vrbo",
-    image: "/images/vrbo-logo.png",
+    image: "images/vrbo-logo.png",
     items: [
       {
         title: "Android Engineer",
@@ -184,7 +184,7 @@ export const experiences = [
   {
     period: "Aug 2014 — May 2019",
     company: "The University of Texas at Austin",
-    image: "/images/texas-logo.svg",
+    image: "images/texas-logo.svg",
     items: [
       {
         title: "Graduate / Undergraduate Student",

@@ -15,7 +15,7 @@ export const Hero = () => {
     <div
       className="h-screen bg-bottom bg-cover flex items-center justify-center"
       style={{
-        backgroundImage: "url('/images/hero.png')",
+        backgroundImage: "url('images/hero.png')",
         backgroundPosition: "center bottom",
       }}
     >
