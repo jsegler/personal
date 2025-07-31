@@ -58,7 +58,7 @@ export const Stars: FC = () => {
     if (!svg) return;
 
     const circles = Array.from(svg.querySelectorAll("circle"));
-    const speed = 0.02;
+    const speed = 0.01;
 
     const animate = () => {
       offsetRef.current += speed;
