@@ -3,7 +3,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 import * as THREE from "three";
 import { Vector3 } from "three";
-import { wordCloudSkillsGrid } from "../utils/constants";
+import { wordCloudSkillsGrid } from "@/utils/constants";
 
 interface WordProps {
   children: string;

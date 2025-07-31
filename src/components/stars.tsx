@@ -1,4 +1,4 @@
-import { useScrollPosition } from "../hooks/useScrollPosition";
+import { useScrollPosition } from "@/hooks/useScrollPosition";
 import { FC, useEffect, useMemo, useRef, useState } from "react";
 
 type Star = {

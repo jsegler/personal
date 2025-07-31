@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { experiences } from "../utils/constants";
+import { experiences } from "@/utils/constants";
 import clsx from "clsx";
 
 const ExperienceItem = ({

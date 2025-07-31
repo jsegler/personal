@@ -1,5 +1,5 @@
 import { BsArrowDownCircleFill } from "react-icons/bs";
-import { useScrollPosition } from "../hooks/useScrollPosition";
+import { useScrollPosition } from "@/hooks/useScrollPosition";
 import clsx from "clsx";
 import { useEffect, useState } from "react";
 

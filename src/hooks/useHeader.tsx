@@ -1,4 +1,4 @@
-import { HeaderItem } from "../types";
+import { HeaderItem } from "@/types";
 import { createContext, useContext, useState } from "react";
 
 interface HeaderContextType {

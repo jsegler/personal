@@ -1,5 +1,5 @@
-import { HeaderItem } from "../types";
-import { useHeader } from "../hooks/useHeader";
+import { HeaderItem } from "@/types";
+import { useHeader } from "@/hooks/useHeader";
 import clsx from "clsx";
 import { CSSProperties, FC, PropsWithChildren, useEffect, useRef } from "react";
 

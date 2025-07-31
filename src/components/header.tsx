@@ -1,8 +1,8 @@
-import { useScrollPosition } from "../hooks/useScrollPosition";
-import { useHeader } from "../hooks/useHeader";
+import { useScrollPosition } from "@/hooks/useScrollPosition";
+import { useHeader } from "@/hooks/useHeader";
 import clsx from "clsx";
 import { FC, useEffect, useState } from "react";
-import { HeaderItem } from "../types";
+import { HeaderItem } from "@/types";
 
 const headerItems: HeaderItem[] = ["Skills", "Experience", "Contact"];
 

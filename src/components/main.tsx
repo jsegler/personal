@@ -1,4 +1,4 @@
-import { HeaderProvider } from "../hooks/useHeader";
+import { HeaderProvider } from "@/hooks/useHeader";
 import { Contact } from "./contact";
 import { Experience } from "./experience";
 import { Header } from "./header";
