@@ -82,7 +82,13 @@ const ExperienceItem = ({
               transition={{ duration: 0.5, delay: 0.1 }}
             >
               <div className="flex flex-col gap-4 items-center">
-                {image && <img src={image} alt={company} className="w-32" />}
+                {image && (
+                  <img
+                    src={`${process.env.PUBLIC_URL}/${image}`}
+                    alt={company}
+                    className="w-32"
+                  />
+                )}
                 {period}
               </div>
             </motion.header>
@@ -111,7 +117,7 @@ const ExperienceItem = ({
                   aria-label="Technologies used"
                 >
                   {technologies.map((tech, i) => (
-                    <li key={i} className="mr-1.5 mt-2">
+                    <li key={`${tech}${i}`} className="mr-1.5 mt-2">
                       <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-slate-400">
                         {tech}
                       </div>
@@ -129,12 +135,15 @@ const ExperienceItem = ({
 
 export const Experience = () => {
   return (
-    <div className="min-h-screen py-24 flex lg:w-6/12 sm:w-8/12 w-10/12 mx-auto tracking-wider">
+    <div
+      id="experience"
+      className="min-h-screen py-24 flex lg:w-6/12 sm:w-8/12 w-10/12 mx-auto tracking-wider"
+    >
       <ol className="group/list w-full">
         {experiences.map((experience, eIndex) =>
           experience.items.map((item, iIndex) => (
             <ExperienceItem
-              key={eIndex}
+              key={`${eIndex}${item.description}`}
               {...item}
               period={iIndex === 0 ? experience.period : undefined}
               image={iIndex === 0 ? experience.image : undefined}

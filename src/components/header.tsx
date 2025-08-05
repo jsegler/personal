@@ -3,6 +3,7 @@ import { useHeader } from "@/hooks/useHeader";
 import clsx from "clsx";
 import { FC, useEffect, useState } from "react";
 import { HeaderItem } from "@/types";
+import { smoothScrollTo } from "@/utils/scroll";
 
 const headerItems: HeaderItem[] = ["Skills", "Experience", "Contact"];
 
@@ -22,7 +23,7 @@ export const Header: FC = () => {
         show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
       )}
     >
-      {headerItems.map((item) => (
+      {headerItems.map((item, i) => (
         <div
           key={item}
           className={clsx(
@@ -31,6 +32,17 @@ export const Header: FC = () => {
               ? "text-shadow-white text-xl"
               : "text-shadow-none"
           )}
+          onClick={() => {
+            if (i === headerItems.length - 1) {
+              smoothScrollTo(6000, 3000);
+            } else {
+              const el = document.getElementById(item.toLowerCase());
+              if (el) {
+                const y = el.getBoundingClientRect().top + window.pageYOffset;
+                smoothScrollTo(y, 1000);
+              }
+            }
+          }}
         >
           {item}
         </div>

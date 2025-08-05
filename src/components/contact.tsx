@@ -80,6 +80,7 @@ export const Contact = () => {
   return (
     <div
       ref={ref}
+      id="contact"
       className="lg:w-6/12 sm:w-8/12 w-10/12 mx-auto tracking-wider flex justify-center md:pt-8 pb-40 relative"
     >
       <AnimatePresence mode="wait">
