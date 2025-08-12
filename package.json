@@ -1,7 +1,6 @@
 {
   "name": "my-react-tailwind-app",
   "version": "1.0.0",
-  "homepage": "/justin/",
   "private": true,
   "scripts": {
     "start": "craco start",
