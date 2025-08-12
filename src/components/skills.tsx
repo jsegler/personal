@@ -23,7 +23,7 @@ const Word = ({ children, position, i, j, onClick }: WordProps) => {
   const fontSize = (wordCloudSkillsGrid[i - 1][j].radius - 3) / 6;
 
   const fontProps = {
-    font: `${process.env.PUBLIC_URL}/Inter-Bold.woff`,
+    font: `Inter-Bold.woff`,
     fontSize,
     letterSpacing: -0.05,
     lineHeight: 1,

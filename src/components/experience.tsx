@@ -82,13 +82,7 @@ const ExperienceItem = ({
               transition={{ duration: 0.5, delay: 0.1 }}
             >
               <div className="flex flex-col gap-4 items-center">
-                {image && (
-                  <img
-                    src={`${process.env.PUBLIC_URL}/${image}`}
-                    alt={company}
-                    className="w-32"
-                  />
-                )}
+                {image && <img src={image} alt={company} className="w-32" />}
                 {period}
               </div>
             </motion.header>
